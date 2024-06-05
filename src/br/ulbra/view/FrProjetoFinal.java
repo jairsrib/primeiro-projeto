@@ -251,8 +251,6 @@ public class FrProjetoFinal extends javax.swing.JFrame {
         }
     }
 
-    
-
     public void data() {
         Calendar hoje = Calendar.getInstance();
         int diaAtual, mesAtual, anoAtual;
@@ -285,11 +283,11 @@ public class FrProjetoFinal extends javax.swing.JFrame {
             if (Mes == 2) {
                 if (dia >= 30 || dia <= 0) {
                     JOptionPane.showMessageDialog(null, "insira uma dia valido");
-                } else {
-                    if (dia > 31 || dia <= 0) {
-                        JOptionPane.showMessageDialog(null, "insira uma dia valido");
+                }
+            } else {
+                if (dia > 31 || dia <= 0) {
+                    JOptionPane.showMessageDialog(null, "insira uma dia valido");
 
-                    }
                 }
 
             }
