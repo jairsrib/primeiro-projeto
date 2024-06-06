@@ -284,7 +284,8 @@ public class FrProjetoFinal extends javax.swing.JFrame {
                 if (dia >= 30 || dia <= 0) {
                     JOptionPane.showMessageDialog(null, "insira uma dia valido");
                 }
-            } else {
+            }
+            if (Mes == 1 || Mes == 3 || Mes == 5 || Mes == 7 || Mes == 8 || Mes == 10 || Mes == 12) {
                 if (dia > 31 || dia <= 0) {
                     JOptionPane.showMessageDialog(null, "insira uma dia valido");
 
@@ -545,6 +546,8 @@ public class FrProjetoFinal extends javax.swing.JFrame {
     }
 
     private void btConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btConsultarActionPerformed
+
+        
         Nomear();
         data();
         int dia = Integer.parseInt(txtDia.getText());
